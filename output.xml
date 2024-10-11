@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240904 11:23:11.139" rpa="false" schemaversion="4">
+<suite id="s1" name="formPDIBDD" source="C:\PDI Robot Framework\formPDIBDD.robot">
+<test id="s1-t1" name="Cenario 1: Cadastro de usuario" line="57">
+<kw name="Dado que acesso o site Aprendendo a Testar">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240904 11:23:11.365" level="INFO">Opening browser 'chrome' to base url 'http://aprendendotestar.com.br/treinar-automacao.php'.</msg>
+<status status="PASS" starttime="20240904 11:23:11.365" endtime="20240904 11:23:17.747"/>
+</kw>
+<status status="PASS" starttime="20240904 11:23:11.364" endtime="20240904 11:23:17.747"/>
+</kw>
+<kw name="Quando eu insiro os dados de cadastro">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputUsuario}</arg>
+<arg>${usuario}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240904 11:23:17.749" level="INFO">Typing text 'MRFACHINI' into text field '//input[@name="form_usuario"]'.</msg>
+<status status="PASS" starttime="20240904 11:23:17.748" endtime="20240904 11:23:17.906"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputSenha}</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240904 11:23:17.907" level="INFO">Typing text '123456' into text field '//input[@name="form_senha"]'.</msg>
+<status status="PASS" starttime="20240904 11:23:17.906" endtime="20240904 11:23:18.019"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputNome}</arg>
+<arg>${nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240904 11:23:18.020" level="INFO">Typing text 'Matheus' into text field '//input[@name="form_nome"]'.</msg>
+<status status="PASS" starttime="20240904 11:23:18.019" endtime="20240904 11:23:18.129"/>
+</kw>
+<status status="PASS" starttime="20240904 11:23:17.748" endtime="20240904 11:23:18.129"/>
+</kw>
+<kw name="E clico no botão de submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botaoSubmit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240904 11:23:18.131" level="INFO">Clicking element '//input[@type="submit"]'.</msg>
+<status status="PASS" starttime="20240904 11:23:18.130" endtime="20240904 11:23:18.959"/>
+</kw>
+<status status="PASS" starttime="20240904 11:23:18.130" endtime="20240904 11:23:18.960"/>
+</kw>
+<status status="PASS" starttime="20240904 11:23:11.364" endtime="20240904 11:23:18.960"/>
+</test>
+<test id="s1-t2" name="Cenario 2: Apagar dados" line="63">
+<kw name="E clico no botão apagar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botaoApagar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240904 11:23:18.966" level="INFO">Clicking element 'css=body &gt; section &gt; section.wrapper &gt; div &gt; table &gt; tbody &gt; tr:nth-child(2) &gt; td:nth-child(5) &gt; a'.</msg>
+<status status="PASS" starttime="20240904 11:23:18.965" endtime="20240904 11:23:20.184"/>
+</kw>
+<status status="PASS" starttime="20240904 11:23:18.965" endtime="20240904 11:23:20.185"/>
+</kw>
+<kw name="Então o navegador deve ser fechado">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240904 11:23:20.186" endtime="20240904 11:23:22.519"/>
+</kw>
+<status status="PASS" starttime="20240904 11:23:20.185" endtime="20240904 11:23:22.519"/>
+</kw>
+<status status="PASS" starttime="20240904 11:23:18.964" endtime="20240904 11:23:22.520"/>
+</test>
+<status status="PASS" starttime="20240904 11:23:11.141" endtime="20240904 11:23:22.521"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="formPDIBDD">formPDIBDD</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
